@@ -1,0 +1,59 @@
+{
+  "title": "Kiểm Tra Website Miễn Phí",
+  "subtitle": "Phân tích toàn diện hiệu năng, bảo mật, SEO & tương thích di động trong 60 giây",
+  "placeholder": "Nhập tên miền (VD: doanhnghiep.vn)",
+  "scanButton": "QUÉT MIỄN PHÍ TRONG 60 GIÂY",
+  "scanning": "Đang quét...",
+  "steps": [
+    "Kiểm tra SSL & Tiêu chuẩn An ninh Headers",
+    "Đo lường Core Web Vitals (LCP, TTFB, CLS) & Tốc độ Di động",
+    "Phân tích Cấu trúc Schema JSON-LD & Độ sẵn sàng AEO/AI Search",
+    "Tính toán chỉ số 4 chiều & Kết xuất PDF Báo cáo 5 trang"
+  ],
+  "completed": "Hoàn tất quét!",
+  "overallScore": "Điểm Tổng Quan",
+  "categories": {
+    "performance": "Hiệu Năng",
+    "security": "Bảo Mật",
+    "aeo": "AEO / AI Search",
+    "mobile": "Di Động"
+  },
+  "weights": {
+    "performance": "40%",
+    "security": "25%",
+    "aeo": "20%",
+    "mobile": "15%"
+  },
+  "leadGate": {
+    "heading": "Mở Khóa Báo Cáo Chi Tiết 5 Trang",
+    "description": "Nhập thông tin để tải báo cáo PDF chi tiết phân tích website của bạn",
+    "namePlaceholder": "Họ và tên",
+    "phonePlaceholder": "Số điện thoại Zalo (bắt buộc)",
+    "emailPlaceholder": "Email nhận file",
+    "submitButton": "TẢI BÁO CÁO PDF CHI TIẾT 5 TRANG",
+    "submitting": "Đang xử lý..."
+  },
+  "downloaded": {
+    "heading": "Báo cáo đã được tải!",
+    "description": "Cảm ơn bạn đã sử dụng TVT Scanner. Kiểm tra file PDF trong thư mục tải về.",
+    "zaloCta": "Tư vấn 1-1 với Founder Nguyễn Thanh Tùng qua Zalo",
+    "scanAgain": "Quét website khác"
+  },
+  "errors": {
+    "emptyUrl": "Vui lòng nhập tên miền website",
+    "invalidUrl": "Tên miền không hợp lệ",
+    "invalidPhone": "Số điện thoại không hợp lệ (VD: 0912345678)",
+    "invalidEmail": "Email không hợp lệ",
+    "requiredPhone": "Số điện thoại Zalo là bắt buộc",
+    "requiredName": "Vui lòng nhập họ và tên",
+    "scanFailed": "Quét thất bại. Vui lòng thử lại.",
+    "networkError": "Lỗi kết nối mạng. Vui lòng kiểm tra và thử lại.",
+    "serverError": "Lỗi máy chủ. Vui lòng thử lại sau."
+  },
+  "scoreLabels": {
+    "excellent": "Xuất sắc",
+    "good": "Tốt",
+    "average": "Trung bình",
+    "poor": "Yếu"
+  }
+}
