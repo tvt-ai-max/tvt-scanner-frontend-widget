@@ -1,0 +1,22 @@
+{
+  "name": "tvt-scanner-frontend-widget",
+  "version": "1.0.0",
+  "description": "Embeddable interactive web audit widget and WordPress shortcode for TVT Web Scanner 60s",
+  "main": "src/widget.js",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "demo": "node demo/mock-server.js"
+  },
+  "keywords": [
+    "tvt-agency",
+    "audit-scanner",
+    "widget",
+    "wordpress-plugin",
+    "lead-generation"
+  ],
+  "author": "Nguyen Thanh Tung <tung@tvtagency.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jsdom": "^24.0.0"
+  }
+}
