@@ -49,7 +49,7 @@ final class TVT_Scanner_Widget {
         register_setting( 'tvt_scanner_widget', 'tvt_scanner_api_url', [
             'type'              => 'string',
             'sanitize_callback' => 'esc_url_raw',
-            'default'           => '',
+            'default'           => 'https://api.tvtagency.com/scanner',
         ] );
         register_setting( 'tvt_scanner_widget', 'tvt_scanner_zalo_url', [
             'type'              => 'string',
@@ -107,7 +107,7 @@ final class TVT_Scanner_Widget {
 
     public function render_shortcode( array|string $atts = [] ): string {
         $atts = shortcode_atts( [
-            'api_url'  => get_option( 'tvt_scanner_api_url', '' ),
+            'api_url'  => get_option( 'tvt_scanner_api_url', 'https://api.tvtagency.com/scanner' ),
             'zalo_url' => get_option( 'tvt_scanner_zalo_url', 'https://zalo.me/tvtagency' ),
         ], $atts, 'tvt_scanner_widget' );
 
@@ -127,8 +127,14 @@ final class TVT_Scanner_Widget {
             return;
         }
         $plugin_dir_url = plugin_dir_url( __FILE__ );
-        $base_url       = trailingslashit( dirname( $plugin_dir_url ) ) . 'src/';
-        $version        = '1.0.0';
+        if ( file_exists( plugin_dir_path( __FILE__ ) . 'assets/widget.js' ) ) {
+            $base_url = $plugin_dir_url . 'assets/';
+        } elseif ( file_exists( plugin_dir_path( __FILE__ ) . 'src/widget.js' ) ) {
+            $base_url = $plugin_dir_url . 'src/';
+        } else {
+            $base_url = trailingslashit( dirname( $plugin_dir_url ) ) . 'src/';
+        }
+        $version = '1.0.0';
 
         wp_enqueue_style(
             'tvt-scanner-widget',
