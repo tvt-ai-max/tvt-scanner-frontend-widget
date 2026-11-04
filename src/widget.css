@@ -38,6 +38,11 @@
   margin-bottom: 24px;
 }
 
+.tvt-audit-landing .tvt-sw-header,
+.tvt-no-inner-header .tvt-sw-header {
+  display: none;
+}
+
 .tvt-sw-title {
   font-size: 24px;
   font-weight: 700;
